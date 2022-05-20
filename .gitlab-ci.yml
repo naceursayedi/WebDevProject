@@ -1,0 +1,20 @@
+# Template for node see:
+# https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Nodejs.gitlab-ci.yml
+# Coverage see:
+# https://gist.github.com/rishitells/3c4536131819cff4eba2c8ab5bbb4570
+
+image: node:latest  # virtual machine with Node.js already installed
+
+stages:
+  - test
+
+javascript:
+  stage: test
+  script:
+    - npm install   # load dependencies defined in package.json
+    - npm run build # compile TypeScript sources
+    - npm run test  # run the tests
+  artifacts:
+    reports:
+      junit:
+        - junit.xml # make tests result available in GitLab UI
