@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sheet</title>
+
+    <style>
+        .colhead,
+        .data{
+            border: 1px solid #000000;
+        }
+
+        .grid {
+
+            display: grid;
+            width:90%;
+            grid-template-columns: 2fr 1fr 1fr;
+        }
+
+        .colhead {
+            background-color: lightblue;
+        }
+
+         
+        .data:nth-child(odd)
+         {
+            background-color: rgb(29, 63, 216);
+        }
+
+        /* Add styles here */
+        table{
+            width: 90%;
+        }
+        thead {
+            background-color: lightblue;
+        }
+        table td {
+            border: 1px solid #000000;
+        }
+        table tbody tr:nth-child(odd){background-color: lightyellow;}
+        table td:nth-child(1){columns: 2;}
+    </style>
+</head>
+
+<body>
+
+    <h1>Grid</h1>
+    <div class="grid">
+
+        <div class="colhead">Planet</div>
+        <div class="colhead">Size</div>
+        <div class="colhead">Distance</div>
+
+        <div class="data">Mercury</div>
+        <div class="data">4880 km</div>
+        <div class="data">58 Mkm</div>
+
+        <div class="data">Venus</div>
+        <div class="data">12100 km</div>
+        <div class="data">108 Mkm</div>
+
+        <div class="data">Earth</div>
+        <div class="data">12700 km</div>
+        <div class="data">150 Mkm</div>
+
+        <div class="data">Mars</div>
+        <div class="data">6800 km</div>
+        <div class="data">227 Mkm</div>
+
+        <div class="data">Jupiter</div>
+        <div class="data">143000 km</div>
+        <div class="data">778 Mkm</div>
+
+        <div class="data">Saturn</div>
+        <div class="data">120600 km</div>
+        <div class="data">1430 Mkm</div>
+
+        <div class="data">Uranus</div>
+        <div class="data">51000 km</div>
+        <div class="data">2900 Mkm</div>
+
+        <div class="data">Neptune</div>
+        <div class="data">50000 km</div>
+        <div class="data">4490 Mkm</div>
+
+        <div class="data">Pluto</div>
+        <div class="data">2374 km</div>
+        <div class="data">5905 Mkm</div>
+    </div>
+
+    <h1>Table</h1>
+    <table>
+        <thead>
+            <tr>
+                <td>Planet</td>
+                <td>Size</td>
+                <td>Distance</td>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Mercury</td>
+                <td>4880 km</td>
+                <td>58 Mkm</td>
+            </tr>
+            <tr>
+                <td>Venus</td>
+                <td>12100 km</td>
+                <td>108 Mkm</td>
+            </tr>
+            <tr>
+                <td>Earth</td>
+                <td>12700 km</td>
+                <td>150 Mkm</td>
+            </tr>
+            <tr>
+                <td>Mars</td>
+                <td>6800 km</td>
+                <td>227 Mkm</td>
+            </tr>
+            <tr>
+                <td>Jupiter</td>
+                <td>143000 km</td>
+                <td>778 Mkm</td>
+            </tr>
+            <tr>
+                <td>Saturn</td>
+                <td>120600 km</td>
+                <td>1430 Mkm</td>
+            </tr>
+            <tr>
+                <td>Uranus</td>
+                <td>51000 km</td>
+                <td>2900 Mkm</td>
+            </tr>
+            <tr>
+                <td>Neptune</td>
+                <td>50000 km</td>
+                <td>4490 Mkm</td>
+            </tr>
+            <tr>
+                <td>Pluto</td>
+                <td>2374 km</td>
+                <td>5905 Mkm</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+
+</html>

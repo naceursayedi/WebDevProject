@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Responsive</title>
+
+    <style>
+        @media screen and (max-width: 299px) {
+            .sheet{display: grid; grid-auto-flow:row;}
+            .sheet .item{outline: 3px solid lightgreen;margin: 5px;}
+            .sheet .item .label{background-color: lightgray;}
+        }
+
+        @media screen and (min-width:300px)and (max-width: 499px) {
+            .sheet{display: grid; grid-auto-flow:row; }
+            .sheet .item{display: grid; grid-template-columns: 1fr 2fr ;outline: 3px solid lightblue;margin: 5px;}
+            .sheet .item .label{background-color: lightgray;}
+        }
+
+        @media screen and (min-width: 500px) {
+            .sheet{display: grid; grid-template-columns: auto auto auto;outline: 3px solid lightpink; }
+            .sheet .item .label,.data{outline: 0.1px solid rgb(0, 0, 0);}
+            .sheet .item .label{background-color: lightgray;}
+            .sheet .item .label:nth-child(n){display: none;}
+            /*.sheet .item .label:first-child){display: initial;}*/
+        }
+        /* Add styles here */
+
+    </style>
+</head>
+
+<body>
+
+    <h1>Responsive</h1>
+    <div class="sheet">
+        <div class="item">
+            <div class="label">Planet</div><div class="data">Mercury</div>
+            <div class="label">Size</div><div class="data">4880 km</div>
+            <div class="label">Distance</div><div class="data">58 Mkm</div>
+        </div>
+        <div class="item">
+            <div class="label">Planet</div><div class="data">Venus</div>
+            <div class="label">Size</div><div class="data">12100 km</div>
+            <div class="label">Distance</div><div class="data">108 Mkm</div>
+        </div>
+        <div class="item">
+            <div class="label">Planet</div><div class="data">Earth</div>
+            <div class="label">Size</div><div class="data">12700 km</div>
+            <div class="label">Distance</div><div class="data">150 Mkm</div>
+        </div>
+        <div class="item">
+            <div class="label">Planet</div><div class="data">Mars</div>
+            <div class="label">Size</div><div class="data">6800 km</div>
+            <div class="label">Distance</div><div class="data">227 Mkm</div>
+        </div>
+        <div class="item">
+            <div class="label">Planet</div><div class="data">Jupiter</div>
+            <div class="label">Size</div><div class="data">143000 km</div>
+            <div class="label">Distance</div><div class="data">778 Mkm</div>
+        </div>
+        <div class="item">
+            <div class="label">Planet</div><div class="data">Saturn</div>
+            <div class="label">Size</div><div class="data">120600 km</div>
+            <div class="label">Distance</div><div class="data">1430 Mkm</div>
+        </div>
+        <div class="item">
+            <div class="label">Planet</div><div class="data">Uranus</div>
+            <div class="label">Size</div><div class="data">51000 km</div>
+            <div class="label">Distance</div><div class="data">2900 Mkm</div>
+        </div>
+        <div class="item">
+            <div class="label">Planet</div><div class="data">Neptune</div>
+            <div class="label">Size</div><div class="data">50000 km</div>
+            <div class="label">Distance</div><div class="data">4490 Mkm</div>
+        </div>
+        <div class="item">
+            <div class="label">Planet</div><div class="data">Pluto</div>
+            <div class="label">Size</div><div class="data">2374 km</div>
+            <div class="label">Distance</div><div class="data">5905 Mkm</div>
+        </div>
+    </div>    
+    
+</body>
+
+</html>
